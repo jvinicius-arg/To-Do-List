@@ -2,7 +2,7 @@
 
  # Descrição
  
- Projeto de Web App, To Do List com funções de adicionar, marcar como concluída ou deletar tarefas.
+ Web app baseado no Microsoft To Do e desenvolvido para fins de estudo. Permite ao usuário criar, marcar como concluída ou deletar quaisquer tarefas, que ficam salvas no armazenamento local do navegador utilizado pelo cliente (localStorage).
 
  # Tecnologias 
 
@@ -12,7 +12,7 @@
 
  # Status
 
- Funcionalidades extras em construção...
+ Funcionalidades extras em construção... Projeto em 90%
 
  # Funcionalidades
 
@@ -20,4 +20,9 @@
  - [x] Marcar tarefas como concluídas
  - [x] Remover tarefas
  - [ ] Editar tarefas
+ - [ ] Botão clear all
+
+ # Observações
+
+  O sistema ainda conta com alguns bugs, que são resolvidos apenas ao limpar o cachê do navegador com "localStorage.clear();" executado no console, o que consequentemente apaga as tarefas anteriormente salvas.
  
