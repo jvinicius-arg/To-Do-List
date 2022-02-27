@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+  --transp-white: rgba(255, 255, 255, 0.1);
+  --main: rgb(255, 255, 255);
+  --shadow-color: rgb(88, 88, 88);
+  --shadow-color2: rgb(34, 34, 34);
+  --black: rgb(0, 0, 0);
+  --bg-color1: rgb(107, 158, 214);
+}
+
+.center-position{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.verify{
+    z-index: 1;
+    position: absolute;
+    top: 140px;
+    right: 10%;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+@media (max-width: 830px){
+    .verify{
+        right: 6.5%;
+    }
+
+    .center-position{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-65%, -50%);
+    }
+}
+
+@media (max-width: 500px){
+    .verify{
+        right: 2%;
+    }
+
+    .center-position{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-70%, -50%);
+    }
+}
+
+body{
+    background: url(../assets/images/wallpaper.png) no-repeat, 
+                var(--bg-color1) repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+main{
+    min-height: 100vh;
+}
+
+.bg{
+    background-color: var(--transp-white);
+    width: 80vw;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    backdrop-filter: blur(3px);
+    outline: 3px solid var(--shadow-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text{
+    color: var(--main);
+    display: block;
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+.input-tarefa{
+    position: relative;
+}
+
+input{
+    width: 70vw;
+    height: 20px;
+    background-color: rgba(255,255,255,0);
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid var(--main);
+    border-radius: 5px;
+    color: var(--main);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+input:focus-visible{
+    outline: 0px;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    background-color: var(--main);
+}
+
+img{
+    width: 20px;
+}
+
+.bg-tarefas{
+    background-color: var(--transp-white);
+    width: 80vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    backdrop-filter: blur(3px);
+    outline: 3px solid var(--shadow-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.checkbox-container{
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    width: 20px;
+    margin-bottom: 30px;
+}
+
+.checkbox{
+    position: absolute;
+    width: 20px;
+    margin: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.al-checkbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--shadow-color);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid white;
+}
+
+.checkbox:checked ~ .al-checkbox{
+    background-color: var(--black);
+}
+
+.checkmark{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, 20%);
+    display: none;
+    cursor: pointer;
+    width: 80%;
+}
+
+.checkbox:checked ~ .checkmark{
+    display: block;
+}
+
+.task{
+    display: inline-block;
+    width: 70vw;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.remove-container{
+    display: inline-block;
+    outline: 1px solid var(--main);
+    padding: 5px;
+    padding-bottom: 8px;
+    margin: 10px;
+    border-radius: 3px;
+    height: 20px;
+    width: 20px;
+}
+
+.remove-container:hover{
+    background-color: var(--shadow-color);
+    cursor: pointer;
+}
+
+footer{
+    width: 100vw;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+#footer-text{
+    display: inline-block;
+    color: var(--shadow-color2);
+    font-size: 0.9rem;
+    background-color: rgba(255, 255, 255,0.4);
+    padding: 1px 5px;
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+}
+
+#footer-link{
+    color: var(--shadow-color2);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#footer-link:hover{
+    text-decoration: underline;
+}
+
+.footer-margin{
+    height: 20px;
+}
