@@ -1,4 +1,4 @@
- <img src="./assets/images/header-readme.png" alt="Banner">
+ <img style="width: 100%;" src="./assets/images/header-readme.png" alt="Banner">
 
  # Descrição
  
@@ -16,8 +16,8 @@
 
  # Funcionalidades
 
- [x] Adicionar tarefas
- [x] Marcar tarefas como concluídas
- [x] Remover tarefas
- [ ] Editar tarefas
+ - [x] Adicionar tarefas
+ - [x] Marcar tarefas como concluídas
+ - [x] Remover tarefas
+ - [ ] Editar tarefas
  
