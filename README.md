@@ -19,8 +19,8 @@
  - [x] Adicionar tarefas
  - [x] Marcar tarefas como concluídas
  - [x] Remover tarefas
- - [ ] Editar tarefas
- - [ ] Botão clear all
+ - [x] Botão Clear All
+ - [ ] Adicionar tarefa com Enter
 
  # Observações
 

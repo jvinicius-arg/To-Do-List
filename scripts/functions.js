@@ -5,6 +5,11 @@ let tsk = [];
 let tskText = [];
 let remove = [];
 
+function clearAll () {
+    localStorage.clear();
+    location.reload(false);
+}
+
 function error () {
     alert("Um erro ocorreu, \nA lista será reiniciada");
     localStorage.clear();
