@@ -12,7 +12,7 @@
 
  # Status
 
- Funcionalidades extras em construção... Projeto em 90%
+ Funcionalidades extras em construção... Projeto em 98%
 
  # Funcionalidades
 
@@ -21,8 +21,3 @@
  - [x] Remover tarefas
  - [x] Botão Clear All
  - [ ] Adicionar tarefa com Enter
-
- # Observações
-
-  O sistema ainda conta com alguns bugs, que são resolvidos apenas ao limpar o cachê do navegador com "localStorage.clear();" executado no console, o que consequentemente apaga as tarefas anteriormente salvas.
- 

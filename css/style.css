@@ -69,6 +69,10 @@
         left: 50%;
         transform: translate(-70%, -50%);
     }
+
+    .checkmark{
+        margin: 1px;
+    }
 }
 
 @media (max-width: 400px){
@@ -77,6 +81,10 @@
         top: 50%;
         left: 50%;
         transform: translate(-80%, -50%);
+    }
+
+    .checkmark{
+        margin: 2px;
     }
 }
 
@@ -238,7 +246,6 @@ img{
 .task{
     display: inline-block;
     width: 70vw;
-    color: white;
     text-align: center;
     text-transform: uppercase;
 }
@@ -259,6 +266,10 @@ img{
     cursor: pointer;
 }
 
+.clear-all-margin{
+    height: 12px;
+}
+
 .clear-btn{
     background-color: var(--shadow-color);
     height: 50px;
@@ -266,7 +277,7 @@ img{
     border-radius: 5px;
     transition: ease-out 0.3s;
     cursor: pointer;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
