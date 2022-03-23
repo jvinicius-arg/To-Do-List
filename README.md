@@ -12,7 +12,7 @@
 
  # Status
 
- Funcionalidades extras em construção... Projeto em 98%
+ Projeto totalmente concluído, porém, passível de modificações no futuro.
 
  # Funcionalidades
 
@@ -20,4 +20,4 @@
  - [x] Marcar tarefas como concluídas
  - [x] Remover tarefas
  - [x] Botão Clear All
- - [ ] Adicionar tarefa com Enter
+ - [x] Adicionar tarefa com Enter
